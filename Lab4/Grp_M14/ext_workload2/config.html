@@ -1,0 +1,140 @@
+<title>Vdbench output/config.html</title><pre>
+Output from script /home/jwalit/Downloads/Assignment-4/vdbench/linux/config.sh: 
+
+Sunday 13 November 2022 10:54:34 PM IST
+>>>>>uname -a
+Linux jwalit 5.18.0-kali5-amd64 #1 SMP PREEMPT_DYNAMIC Debian 5.18.5-1kali6 (2022-07-07) x86_64 GNU/Linux
+Sunday 13 November 2022 10:54:34 PM IST
+>>>>>ifconfig -a
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.19.0.19  netmask 255.255.254.0  broadcast 10.19.1.255
+        inet6 fe80::2ca9:46c:74d4:ce00  prefixlen 64  scopeid 0x20<link>
+        ether 00:0e:09:87:68:f3  txqueuelen 1000  (Ethernet)
+        RX packets 299019  bytes 360190375 (343.5 MiB)
+        RX errors 0  dropped 11  overruns 0  frame 0
+        TX packets 158825  bytes 21796186 (20.7 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 9707  bytes 1593348 (1.5 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 9707  bytes 1593348 (1.5 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.42.0.1  netmask 255.255.255.0  broadcast 10.42.0.255
+        inet6 fe80::2539:3917:19fa:3272  prefixlen 64  scopeid 0x20<link>
+        ether 64:6c:80:c3:f5:a1  txqueuelen 1000  (Ethernet)
+        RX packets 74560  bytes 12428393 (11.8 MiB)
+        RX errors 0  dropped 2  overruns 0  frame 0
+        TX packets 147490  bytes 184391236 (175.8 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+Sunday 13 November 2022 10:54:34 PM IST
+>>>>>id
+uid=0(root) gid=0(root) groups=0(root)
+Sunday 13 November 2022 10:54:34 PM IST
+>>>>>mount
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+udev on /dev type devtmpfs (rw,nosuid,relatime,size=3897552k,nr_inodes=974388,mode=755,inode64)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,noexec,relatime,size=786716k,mode=755,inode64)
+/dev/nvme0n1p9 on / type ext4 (rw,relatime,errors=remount-ro)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev,inode64)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k,inode64)
+cgroup2 on /sys/fs/cgroup type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+efivarfs on /sys/firmware/efi/efivars type efivarfs (rw,nosuid,nodev,noexec,relatime)
+bpf on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=29,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=14151)
+mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)
+debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)
+tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)
+configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)
+ramfs on /run/credentials/systemd-sysusers.service type ramfs (ro,nosuid,nodev,noexec,relatime,mode=700)
+/dev/nvme0n1p7 on /boot type ext4 (rw,relatime)
+/dev/nvme0n1p1 on /boot/efi type vfat (rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro)
+binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,nosuid,nodev,noexec,relatime)
+sunrpc on /run/rpc_pipefs type rpc_pipefs (rw,relatime)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=786716k,nr_inodes=196679,mode=700,uid=1000,gid=1000,inode64)
+gvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+/dev/sda1 on /media/jwalit/soham type exfat (rw,nosuid,nodev,relatime,uid=1000,gid=1000,fmask=0022,dmask=0022,iocharset=utf8,errors=remount-ro,uhelper=udisks2)
+portal on /run/user/1000/doc type fuse.portal (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+kstat on /zfs-kstat type fuse (rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other)
+gr14 on /gr14 type fuse.zfs (rw,relatime,user_id=0,group_id=0,default_permissions,allow_other)
+Sunday 13 November 2022 10:54:34 PM IST
+>>>>>memory
+MemTotal:        7867160 kB
+MemFree:          298440 kB
+MemAvailable:    3158456 kB
+Buffers:          109140 kB
+Cached:          3873012 kB
+SwapCached:           32 kB
+Active:          1536132 kB
+Inactive:        5232444 kB
+Active(anon):     430564 kB
+Inactive(anon):  3313124 kB
+Active(file):    1105568 kB
+Inactive(file):  1919320 kB
+Unevictable:      263428 kB
+Mlocked:               0 kB
+SwapTotal:       7812092 kB
+SwapFree:        7809532 kB
+Dirty:               224 kB
+Writeback:             0 kB
+AnonPages:       2959948 kB
+Mapped:           692256 kB
+Shmem:            957428 kB
+KReclaimable:     121960 kB
+Slab:             246120 kB
+SReclaimable:     121960 kB
+SUnreclaim:       124160 kB
+KernelStack:       19064 kB
+PageTables:        37480 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    11745672 kB
+Committed_AS:    9636768 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       52384 kB
+VmallocChunk:          0 kB
+Percpu:             8608 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:    772096 kB
+ShmemHugePages:   638976 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      240816 kB
+DirectMap2M:     5771264 kB
+DirectMap1G:     3145728 kB
+               total        used        free      shared  buff/cache   available
+Mem:         7867160     3464380      298440      957428     4104340     3158456
+Low:         7867160     7568720      298440
+High:              0           0           0
+Swap:        7812092        2560     7809532
+Sunday 13 November 2022 10:54:34 PM IST
+>>>>>ps -ef | grep -i vdb
+root       10515    8869  0 22:54 pts/1    00:00:00 sudo ./vdbench -f workload2 anchor=/mnt
+root       10516   10515  0 22:54 pts/2    00:00:00 sudo ./vdbench -f workload2 anchor=/mnt
+root       10517   10516  0 22:54 pts/2    00:00:00 /bin/bash ./vdbench -f workload2 anchor=/mnt
+root       10519   10517 39 22:54 pts/2    00:00:00 java -client -Xmx512m -Xms64m -cp ./:./classes:./vdbench.jar Vdb.Vdbmain -f workload2 anchor=/mnt
+root       10546   10519  0 22:54 pts/2    00:00:00 /bin/bash /home/jwalit/Downloads/Assignment-4/vdbench/vdbench SlaveJvm -m localhost -n localhost-10-221113-22.54.33.858 -l localhost-0 -p 5570
+root       10550   10546  0 22:54 pts/2    00:00:00 java -client -Xmx1024m -Xms128m -cp /home/jwalit/Downloads/Assignment-4/vdbench/:/home/jwalit/Downloads/Assignment-4/vdbench/classes:/home/jwalit/Downloads/Assignment-4/vdbench/vdbench.jar Vdb.SlaveJvm SlaveJvm -m localhost -n localhost-10-221113-22.54.33.858 -l localhost-0 -p 5570
+root       10580   10519  0 22:54 pts/2    00:00:00 /bin/bash /home/jwalit/Downloads/Assignment-4/vdbench/linux/config.sh -o /home/jwalit/Downloads/Assignment-4/vdbench/output localhost
+root       10596   10580  0 22:54 pts/2    00:00:00 grep -i vdb
+

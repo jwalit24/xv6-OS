@@ -1,0 +1,109 @@
+<title>Vdbench output/localhost-0.stdout.html</title><pre>
+stdout/stderr for slave=localhost-0
+
+22:54:33.994 22:54:33.994 SlaveJvm execution parameter:  '-m localhost'
+22:54:33.994 22:54:33.994 SlaveJvm execution parameter:  '-n localhost-10-221113-22.54.33.858'
+22:54:33.995 22:54:33.994 SlaveJvm execution parameter:  '-l localhost-0'
+22:54:33.995 22:54:33.994 SlaveJvm execution parameter:  '-p 5570'
+22:54:33.995 22:54:33.994 SlaveJvm positional parameter: 'SlaveJvm'
+22:54:34.019 22:54:34.019 successfully connected to master localhost
+22:54:34.019 22:54:34.019 Connection to localhost using port 5570 successful
+22:54:34.150 22:54:34.150 ticks_per_second: 100
+22:54:34.152 22:54:34.152 execute(): ls -l /mnt
+22:54:34.164 22:54:34.164 Configuration interpretation took 0.01 seconds
+
+Link to Run Definitions:         <A HREF="#_668849042">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_434176574">rd1 For loops: None</A>
+
+22:54:34.239 22:54:34.238 Beginning of run setup
+22:54:34.239 22:54:34.239 **********************
+22:54:34.239 
+22:54:34.239 
+22:54:34.251 22:54:34.251 File '/var/log/messages.1' does not exist. Monitoring bypassed
+22:54:34.282 22:54:34.282 Deleting old file structure.
+22:54:34.283 22:54:34.283 Starting initializeFileAnchor for rd=format_for_rd1 For loops: None anchor=fsd1
+22:54:34.284 22:54:34.284 Completed the creation of the directory list for /mnt: 1 directories.
+22:54:34.285 22:54:34.285 Generated 2 file names; total anchor size: 2g (2,147,483,648)
+22:54:34.285 22:54:34.285 Writing control file for anchor=/mnt at start of run.
+22:54:34.297 22:54:34.297 Completed control file for anchor=/mnt at start of run.  dirs: 1/0 files: 2/0 sizes: 2g/0/0/0
+22:54:34.300 22:54:34.300 Completed initializeFileAnchor for fsd1: 0.02
+22:54:34.310 22:54:34.310 Started 8 threads for fwd=format,fsd=fsd1
+22:54:34.310 22:54:34.310 Started 8 FwgThreads for rd=format_for_rd1 For loops: None
+22:54:34.310 22:54:34.310 Waiting for task synchronization
+22:54:34.310 22:54:34.310 Requesting full garbage collection
+22:54:34.311 22:54:34.311 GcTracker: cum:   0 intv:  0 ms:       0 mss:  0.00% Heap_MB max:  1024 curr:   130 used:    32 free:    98 
+22:54:34.318 22:54:34.318 GcTracker: cum:   1 intv:  1 ms:       6 mss:  0.00% Heap_MB max:  1024 curr:   128 used:    21 free:   107 
+22:54:34.318 22:54:34.318 task_wait_start_complete() end
+
+<a name="_668849042"></a><i><b>22:54:35.002 Starting RD=format_for_rd1</b></i>
+
+22:54:35.007 22:54:35.006 task_run_all(): 9 tasks
+22:54:35.429 22:54:35.429 Message to master: anchor=/mnt mkdir complete.
+22:54:38.580 22:54:38.580 Message to master: anchor=/mnt create complete.
+22:54:38.683 22:54:38.683 
+22:54:38.684 22:54:38.683 Miscellaneous statistics:
+22:54:38.684 22:54:38.684 FILE_CREATES        Files created:                                    2
+22:54:38.684 22:54:38.684 DIRECTORY_CREATES   Directories created:                              1
+22:54:38.685 22:54:38.685 FILE_DELETES        Files deleted:                                  450
+22:54:38.685 22:54:38.685 DIRECTORY_DELETES   Directories deleted:                             12
+22:54:38.686 22:54:38.686 WRITE_OPENS         Files opened for write activity:                  2
+22:54:38.686 22:54:38.686 DIR_EXISTS          Directory may not exist (yet):                    3
+22:54:38.687 22:54:38.687 FILE_CLOSES         Close requests:                                   2
+22:54:38.687 22:54:38.687 
+22:54:38.688 22:54:38.688 Java Heap in MB. max: 1024.000; current:  128.000; used:   26.042; free:  101.958
+22:54:38.688 22:54:38.688 Maximum native memory allocation:    1,048,576; Current allocation:    1,048,576
+22:54:39.045 22:54:39.044 Writing control file for anchor=/mnt at end of run.
+22:54:39.049 22:54:39.049 Completed control file for anchor=/mnt at end of run.  dirs: 1/1 files: 2/2 sizes: 2g/2g/2/2g
+22:54:39.049 22:54:39.049 End of run
+22:54:39.049 22:54:39.049 **********
+22:54:39.049 
+22:54:39.050 
+22:54:39.155 22:54:39.155 Beginning of run setup
+22:54:39.155 22:54:39.155 **********************
+22:54:39.155 
+22:54:39.155 
+22:54:39.182 22:54:39.181 Starting initializeFileAnchor for rd=rd1 For loops: None anchor=fsd1
+22:54:39.182 22:54:39.182 Reading control file for anchor=/mnt
+22:54:39.183 22:54:39.183 Completed reading control file.
+22:54:39.183 22:54:39.183 Completed the creation of the directory list for /mnt: 1 directories.
+22:54:39.183 22:54:39.183 Generated 2 file names; total anchor size: 2g (2,147,483,648)
+22:54:39.183 22:54:39.183 Writing control file for anchor=/mnt at start of run.
+22:54:39.187 22:54:39.187 Completed control file for anchor=/mnt at start of run.  dirs: 1/1 files: 2/2 sizes: 2g/2g/0/0
+22:54:39.187 22:54:39.187 During anchor creation for anchor=/mnt there were 1 directories and 2 files
+22:54:39.187 22:54:39.187 Completed initializeFileAnchor for fsd1: 0.01
+22:54:39.188 22:54:39.188 Started 2 threads for fwd=fwd1,fsd=fsd1,operation=create
+22:54:39.188 22:54:39.188 Started 2 FwgThreads for rd=rd1 For loops: None
+22:54:39.189 22:54:39.188 Waiting for task synchronization
+22:54:39.189 22:54:39.188 Requesting full garbage collection
+22:54:39.189 22:54:39.189 GcTracker: cum:   1 intv:  0 ms:       0 mss:  0.00% Heap_MB max:  1024 curr:   128 used:    31 free:    97 
+22:54:39.194 22:54:39.194 GcTracker: cum:   2 intv:  1 ms:       4 mss:  0.00% Heap_MB max:  1024 curr:   128 used:    21 free:   107 
+22:54:39.194 22:54:39.194 task_wait_start_complete() end
+22:54:39.258 22:54:39.258 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+22:54:39.258 22:54:39.258 sendMessageToConsole: /var/log/messages: Nov 13 22:54:36 jwalit gnome-system-monitor.desktop[6844]: glibtop(c=6844): [WARNING] statvfs '/run/user/1000/doc' failed: Operation not permitted
+22:54:39.258 22:54:39.258 sendMessageToConsole: /var/log/messages: Nov 13 22:54:36 jwalit firefox-esr.desktop[2134]: Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+22:54:39.258 22:54:39.258 sendMessageToConsole: 
+
+<a name="_434176574"></a><i><b>22:54:40.001 Starting RD=rd1; elapsed=30; fwdrate=max. For loops: None</b></i>
+
+22:54:40.003 22:54:40.003 task_run_all(): 3 tasks
+22:54:40.189 22:54:40.189 Anchor: /mnt
+22:54:40.189 22:54:40.189 Vdbench is trying to create a new file, but all files already exist, 
+22:54:40.189 22:54:40.189 and no threads are currently active deleting files
+22:54:40.189 22:54:40.189 FwgThread.canWeGetMoreFiles(): Shutting down threads for operation=create
+22:54:40.189 22:54:40.189 
+22:54:40.190 22:54:40.189 sendMessageToConsole: Anchor: /mnt
+22:54:40.190 22:54:40.189 sendMessageToConsole: Vdbench is trying to create a new file, but all files already exist, 
+22:54:40.190 22:54:40.190 sendMessageToConsole: and no threads are currently active deleting files
+22:54:40.190 22:54:40.190 sendMessageToConsole: FwgThread.canWeGetMoreFiles(): Shutting down threads for operation=create
+22:54:40.190 22:54:40.190 sendMessageToConsole: 
+22:54:40.191 22:54:40.191 Miscellaneous statistics: All counters are zero
+22:54:40.192 22:54:40.192 Java Heap in MB. max: 1024.000; current:  128.000; used:   23.283; free:  104.717
+22:54:40.193 22:54:40.193 Maximum native memory allocation:    1,056,768; Current allocation:        8,192
+22:54:41.017 22:54:41.017 Writing control file for anchor=/mnt at end of run.
+22:54:41.021 22:54:41.021 Completed control file for anchor=/mnt at end of run.  dirs: 1/1 files: 2/2 sizes: 2g/2g/0/0
+22:54:41.021 22:54:41.021 End of run
+22:54:41.021 22:54:41.021 **********
+22:54:41.021 
+22:54:41.021 
+22:54:41.196 22:54:41.196 Master is requesting slave shutdown
+22:54:41.197 22:54:41.196 Java Heap in MB. max: 1024.000; current:  128.000; used:   24.074; free:  103.926

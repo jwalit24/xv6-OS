@@ -1,0 +1,162 @@
+<title>Vdbench output/config.html</title><pre>
+Output from script /home/akshat/Desktop/vd/linux/config.sh: 
+
+Mon Nov 14 10:57:34 PM IST 2022
+>>>>>uname -a
+Linux 4KxH4T 5.10.16.3-microsoft-standard-WSL2 #1 SMP Fri Apr 2 22:23:49 UTC 2021 x86_64 GNU/Linux
+Mon Nov 14 10:57:34 PM IST 2022
+>>>>>ifconfig -a
+bond0: flags=5122<BROADCAST,MASTER,MULTICAST>  mtu 1500
+        ether 22:7c:75:b5:0f:4c  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+dummy0: flags=130<BROADCAST,NOARP>  mtu 1500
+        ether c2:16:63:e5:88:87  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.17.25.2  netmask 255.255.240.0  broadcast 172.17.31.255
+        inet6 fe80::215:5dff:fe88:3542  prefixlen 64  scopeid 0x20<link>
+        ether 00:15:5d:88:35:42  txqueuelen 1000  (Ethernet)
+        RX packets 57459  bytes 125069616 (119.2 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 40832  bytes 4346671 (4.1 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 372832  bytes 871605465 (831.2 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 372832  bytes 871605465 (831.2 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+sit0: flags=128<NOARP>  mtu 1480
+        sit  txqueuelen 1000  (IPv6-in-IPv4)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+tunl0: flags=128<NOARP>  mtu 1480
+        tunnel   txqueuelen 1000  (IPIP Tunnel)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+Mon Nov 14 10:57:34 PM IST 2022
+>>>>>id
+uid=0(root) gid=0(root) groups=0(root)
+Mon Nov 14 10:57:34 PM IST 2022
+>>>>>mount
+/dev/sdd on / type ext4 (rw,relatime,discard,errors=remount-ro,data=ordered)
+none on /mnt/wslg type tmpfs (rw,relatime)
+none on /mnt/wsl type tmpfs (rw,relatime)
+tools on /init type 9p (ro,relatime,dirsync,aname=tools;fmask=022,loose,access=client,msize=65536,trans=fd,rfd=7,wfd=7)
+none on /dev type devtmpfs (rw,nosuid,relatime,size=1933532k,nr_inodes=483383,mode=755)
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,noatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,noatime)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,noatime,gid=5,mode=620,ptmxmode=000)
+none on /run type tmpfs (rw,nosuid,noexec,noatime,mode=755)
+none on /run/lock type tmpfs (rw,nosuid,nodev,noexec,noatime)
+none on /run/shm type tmpfs (rw,nosuid,nodev,noatime)
+none on /run/user type tmpfs (rw,nosuid,nodev,noexec,noatime,mode=755)
+binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,relatime)
+tmpfs on /sys/fs/cgroup type tmpfs (rw,nosuid,nodev,noexec,relatime,mode=755)
+cgroup2 on /sys/fs/cgroup/unified type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset,clone_children)
+cgroup on /sys/fs/cgroup/cpu type cgroup (rw,nosuid,nodev,noexec,relatime,cpu)
+cgroup on /sys/fs/cgroup/cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpuacct)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+cgroup on /sys/fs/cgroup/net_cls type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls)
+cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
+cgroup on /sys/fs/cgroup/net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_prio)
+cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,hugetlb)
+cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
+cgroup on /sys/fs/cgroup/rdma type cgroup (rw,nosuid,nodev,noexec,relatime,rdma)
+drivers on /usr/lib/wsl/drivers type 9p (ro,nosuid,nodev,noatime,dirsync,aname=drivers;fmask=222;dmask=222,mmap,access=client,msize=65536,trans=fd,rfd=4,wfd=4)
+lib on /usr/lib/wsl/lib type 9p (ro,nosuid,nodev,noatime,dirsync,aname=lib;fmask=222;dmask=222,mmap,access=client,msize=65536,trans=fd,rfd=4,wfd=4)
+none on /mnt/wslg/versions.txt type overlay (rw,relatime,lowerdir=/system/lower,upperdir=/system/rw/upper,workdir=/system/rw/work)
+none on /mnt/wslg/doc type overlay (rw,relatime,lowerdir=/system/lower,upperdir=/system/rw/upper,workdir=/system/rw/work)
+drvfs on /mnt/c type 9p (rw,noatime,dirsync,aname=drvfs;path=C:\;uid=1000;gid=1000;symlinkroot=/mnt/,mmap,access=client,msize=262144,trans=virtio)
+gvfsd-fuse on /mnt/wslg/runtime-dir/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+kstat on /zfs-kstat type fuse (rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other)
+grp_m14 on /grp_m14 type fuse.zfs (rw,relatime,user_id=0,group_id=0,default_permissions,allow_other)
+Mon Nov 14 10:57:34 PM IST 2022
+>>>>>memory
+MemTotal:        3871228 kB
+MemFree:          156532 kB
+MemAvailable:    2383848 kB
+Buffers:           54644 kB
+Cached:          2319528 kB
+SwapCached:         4684 kB
+Active:           604432 kB
+Inactive:        2777044 kB
+Active(anon):        644 kB
+Inactive(anon):  1040572 kB
+Active(file):     603788 kB
+Inactive(file):  1736472 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       1048576 kB
+SwapFree:        1043420 kB
+Dirty:                52 kB
+Writeback:             0 kB
+AnonPages:        986800 kB
+Mapped:           332664 kB
+Shmem:             33912 kB
+KReclaimable:      51144 kB
+Slab:             100860 kB
+SReclaimable:      51144 kB
+SUnreclaim:        49716 kB
+KernelStack:       13056 kB
+PageTables:        15148 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     2984188 kB
+Committed_AS:    3838480 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       33580 kB
+VmallocChunk:          0 kB
+Percpu:             2592 kB
+AnonHugePages:    262144 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:       82944 kB
+DirectMap2M:     3954688 kB
+DirectMap1G:     8388608 kB
+               total        used        free      shared  buff/cache   available
+Mem:         3871228     1289380      156532       33912     2425316     2383848
+Low:         3871228     3714696      156532
+High:              0           0           0
+Swap:        1048576        5156     1043420
+Mon Nov 14 10:57:34 PM IST 2022
+>>>>>ps -ef | grep -i vdb
+root     25964  8442  0 22:57 pts/1    00:00:00 sudo ./vdbench -f workload2 anchor=/grp_m14
+root     25965 25964  0 22:57 pts/2    00:00:00 sudo ./vdbench -f workload2 anchor=/grp_m14
+root     25966 25965  0 22:57 pts/2    00:00:00 /bin/bash ./vdbench -f workload2 anchor=/grp_m14
+root     25968 25966 56 22:57 pts/2    00:00:00 java -client -Xmx512m -Xms64m -cp ./:./classes:./vdbench.jar Vdb.Vdbmain -f workload2 anchor=/grp_m14
+root     25997 25968  0 22:57 pts/2    00:00:00 /bin/bash /home/akshat/Desktop/vd/vdbench SlaveJvm -m localhost -n localhost-10-221114-22.57.33.713 -l localhost-0 -p 5570
+root     26001 25997 40 22:57 pts/2    00:00:00 java -client -Xmx1024m -Xms128m -cp /home/akshat/Desktop/vd/:/home/akshat/Desktop/vd/classes:/home/akshat/Desktop/vd/vdbench.jar Vdb.SlaveJvm SlaveJvm -m localhost -n localhost-10-221114-22.57.33.713 -l localhost-0 -p 5570
+root     26047 26031  0 22:57 pts/2    00:00:00 grep -i vdb
+

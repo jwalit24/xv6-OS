@@ -1,0 +1,96 @@
+<title>Vdbench output/logfile.html</title><pre>
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Vdbench distribution: vdbench50407
+
+22:54:33.877 input argument scanned: '-fworkload2'
+22:54:33.878 input argument scanned: 'anchor=/mnt'
+22:54:33.878 java.vendor                   Debian
+22:54:33.878 java.home                     /usr/lib/jvm/java-17-openjdk-amd64
+22:54:33.878 java.vm.specification.version 17
+22:54:33.878 java.vm.version               17.0.5+8-Debian-2
+22:54:33.878 java.vm.vendor                Debian
+22:54:33.878 java.specification.version    17
+22:54:33.879 java.class.version            61.0
+22:54:33.879 user.name                     root
+22:54:33.879 user.dir                      /home/jwalit/Downloads/Assignment-4/vdbench
+22:54:33.879 java.io.tmpdir                /tmp
+22:54:33.879 java.class.path               ./:./classes:./vdbench.jar
+22:54:33.879 os.name                       Linux
+22:54:33.879 os.arch                       amd64
+22:54:33.879 os.version                    5.18.0-kali5-amd64
+22:54:33.879 sun.arch.data.model           64
+22:54:33.880 Flushing all reports
+22:54:33.888 Creating anchor for /mnt,fsd=fsd1
+22:54:33.899 rd1 fsd to format: fsd1
+22:54:33.899 rd1 format on host: localhost
+22:54:33.901 Anchor size: anchor=/mnt: dirs:            0; files:            2; bytes:     2.000g (2,147,483,648)
+22:54:33.924 Starting slave: /home/jwalit/Downloads/Assignment-4/vdbench/vdbench SlaveJvm -m localhost -n localhost-10-221113-22.54.33.858 -l localhost-0 -p 5570   
+22:54:34.079 Slave localhost-0 (pid  10550) connected to master 10519
+22:54:34.120 All slaves are now connected
+
+Link to Run Definitions:         <A HREF="#_668849042">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_434176574">rd1 For loops: None</A>
+
+22:54:34.193 Flushing all reports
+22:54:34.194 slv=localhost-0 fwd=format fsd=fsd1 anchor=/mnt threads= 8 skew= 0.00 operation=read 
+22:54:34.210 Waiting for synchronization of all slaves
+22:54:34.411 Synchronization of all slaves complete
+
+<a name="_668849042"></a><i><b>22:54:35.003 Starting RD=format_for_rd1</b></i>
+
+22:54:35.431 localhost-0: anchor=/mnt mkdir complete.
+Nov 13, 2022 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ...mkdir.... ...rmdir.... ...create... ....open.... ...close.... ...delete...
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp
+22:54:36.042            1 7661.0  0.149   9.5 4.69   0.0    0.0  0.000 7661.0  0.149  0.00 957.6 957.62  131072   1.0  0.040  12.0  0.069   0.0  0.000   2.0  2.100   0.0  0.000 450.0  0.138
+22:54:37.025            2 1559.0  1.265   5.9 1.83   0.0    0.0  0.000 1559.0  1.265  0.00 194.8 194.88  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:54:38.015            3 1988.0  1.000   6.1 4.10   0.0    0.0  0.000 1988.0  1.000  0.00 248.5 248.50  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:54:38.581 localhost-0: anchor=/mnt create complete.
+22:54:39.019            4 5175.0  0.218  16.8 13.1   0.0    0.0  0.000 5175.0  0.218  0.00 646.8 646.88  131072   0.0  0.000   0.0  0.000   2.0 3130.1   0.0  0.000   2.0  0.053   0.0  0.000
+22:54:39.028      avg_2-4 2907.3  0.584   9.7 6.42   0.0    0.0  0.000 2907.3  0.584  0.00 363.4 363.42  131072   0.0  0.000   0.0  0.000   0.7 3130.1   0.0  0.000   0.7  0.053   0.0  0.000
+22:54:39.028      std_2-4 1975.5  5.723                                1975.5  5.723                                                        1.2 27.038                1.2  0.044             
+22:54:39.028      max_2-4 5175.0 476.60                                5175.0 476.60                                   0.040        0.199   2.0 3149.2        2.102   2.0  0.084        0.603
+22:54:39.144 
+22:54:39.144 Miscellaneous statistics:
+22:54:39.144 (These statistics do not include activity between the last reported interval and shutdown.)
+22:54:39.144 FILE_CREATES        Files created:                                    2          0/sec
+22:54:39.145 DIRECTORY_CREATES   Directories created:                              1          0/sec
+22:54:39.145 FILE_DELETES        Files deleted:                                  450        112/sec
+22:54:39.145 DIRECTORY_DELETES   Directories deleted:                             12          3/sec
+22:54:39.145 WRITE_OPENS         Files opened for write activity:                  2          0/sec
+22:54:39.145 DIR_EXISTS          Directory may not exist (yet):                    3          0/sec
+22:54:39.145 FILE_CLOSES         Close requests:                                   2          0/sec
+22:54:39.145 
+22:54:39.145 Flushing all reports
+22:54:39.146 Java Heap in MB. max:  512.000; current:   66.000; used:   25.278; free:   40.722
+22:54:39.150 slv=localhost-0 fwd=fwd1 fsd=fsd1 anchor=/mnt threads= 2 skew= 0.00 operation=create 
+22:54:39.151 Waiting for synchronization of all slaves
+22:54:39.252 Synchronization of all slaves complete
+22:54:39.260 
+22:54:39.260 Message from slave localhost-0: 
+22:54:39.260 New messages found on /var/adm/messages. Do they belong to you?
+22:54:39.260 /var/log/messages: Nov 13 22:54:36 jwalit gnome-system-monitor.desktop[6844]: glibtop(c=6844): [WARNING] statvfs '/run/user/1000/doc' failed: Operation not permitted
+22:54:39.260 /var/log/messages: Nov 13 22:54:36 jwalit firefox-esr.desktop[2134]: Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+22:54:39.260 
+
+<a name="_434176574"></a><i><b>22:54:40.001 Starting RD=rd1; elapsed=30; fwdrate=max. For loops: None</b></i>
+
+22:54:40.192 
+22:54:40.192 Message from slave localhost-0: 
+22:54:40.192 Anchor: /mnt
+22:54:40.192 Vdbench is trying to create a new file, but all files already exist, 
+22:54:40.192 and no threads are currently active deleting files
+22:54:40.192 FwgThread.canWeGetMoreFiles(): Shutting down threads for operation=create
+22:54:40.192 
+Nov 13, 2022 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ...mkdir.... ...rmdir.... ...create... ....open.... ...close.... ...delete...
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp
+22:54:41.010            1    0.0  0.000   4.4 0.82   0.0    0.0  0.000    0.0  0.000  0.00  0.00   0.00       0   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:54:41.014      avg_2-1 NaN  0.000 NaN NaN   0.0 NaN  0.000 NaN  0.000 NaN NaN NaN       0 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000
+22:54:41.014      std_2-1                                                                                                                                                                    
+22:54:41.014      max_2-1                                                                                                                                                                    
+22:54:41.117 Miscellaneous statistics: All counters are zero
+22:54:41.117 Flushing all reports
+22:54:41.118 Java Heap in MB. max:  512.000; current:   66.000; used:   23.675; free:   42.325
+22:54:41.130 Ending Reporter
+22:54:41.296 Vdbench execution completed successfully. Output directory: /home/jwalit/Downloads/Assignment-4/vdbench/output 
+
+22:54:42.302 Java Heap in MB. max:  512.000; current:   66.000; used:   20.757; free:   45.243

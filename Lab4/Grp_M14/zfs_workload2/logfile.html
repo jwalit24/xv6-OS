@@ -1,0 +1,96 @@
+<title>Vdbench output/logfile.html</title><pre>
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Vdbench distribution: vdbench50407
+
+22:57:33.743 input argument scanned: '-fworkload2'
+22:57:33.744 input argument scanned: 'anchor=/grp_m14'
+22:57:33.745 java.vendor                   Debian
+22:57:33.745 java.home                     /usr/lib/jvm/java-11-openjdk-amd64
+22:57:33.745 java.vm.specification.version 11
+22:57:33.745 java.vm.version               11.0.16+8-post-Debian-1
+22:57:33.746 java.vm.vendor                Debian
+22:57:33.746 java.specification.version    11
+22:57:33.746 java.class.version            55.0
+22:57:33.746 user.name                     root
+22:57:33.746 user.dir                      /home/akshat/Desktop/vd
+22:57:33.746 java.io.tmpdir                /tmp
+22:57:33.746 java.class.path               ./:./classes:./vdbench.jar
+22:57:33.746 os.name                       Linux
+22:57:33.746 os.arch                       amd64
+22:57:33.746 os.version                    5.10.16.3-microsoft-standard-WSL2
+22:57:33.746 sun.arch.data.model           64
+22:57:33.748 Flushing all reports
+22:57:33.761 Creating anchor for /grp_m14,fsd=fsd1
+22:57:33.776 rd1 fsd to format: fsd1
+22:57:33.776 rd1 format on host: localhost
+22:57:33.778 Anchor size: anchor=/grp_m14: dirs:            0; files:            2; bytes:     2.000g (2,147,483,648)
+22:57:33.818 Starting slave: /home/akshat/Desktop/vd/vdbench SlaveJvm -m localhost -n localhost-10-221114-22.57.33.713 -l localhost-0 -p 5570   
+22:57:34.053 Slave localhost-0 (pid  26001) connected to master 25968
+22:57:34.055 All slaves are now connected
+
+Link to Run Definitions:         <A HREF="#_1761291320">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_1451043227">rd1 For loops: None</A>
+
+22:57:34.170 Flushing all reports
+22:57:34.177 slv=localhost-0 fwd=format fsd=fsd1 anchor=/grp_m14 threads= 8 skew= 0.00 operation=read 
+22:57:34.195 Waiting for synchronization of all slaves
+22:57:34.596 Synchronization of all slaves complete
+
+<a name="_1761291320"></a><i><b>22:57:35.003 Starting RD=format_for_rd1</b></i>
+
+22:57:35.433 localhost-0: anchor=/grp_m14 mkdir complete.
+Nov 14, 2022 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ...mkdir.... ...rmdir.... ...create... ....open.... ...close.... ...delete...
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp
+22:57:36.054            1  397.0  0.146  11.9 6.58   0.0    0.0  0.000  397.0  0.146  0.00 49.62  49.62  131072   1.0  0.842   1.0  0.305   0.0  0.000   2.0  1.915   0.0  0.000   2.0 50.974
+22:57:37.017            2 1985.0  1.381  25.2 9.11   0.0    0.0  0.000 1985.0  1.381  0.00 248.1 248.12  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:57:38.012            3  397.0  1.142   9.0 2.86   0.0    0.0  0.000  397.0  1.142  0.00 49.62  49.62  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:57:39.032            4  397.0  8.315  11.8 4.25   0.0    0.0  0.000  397.0  8.315  0.00 49.62  49.62  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:57:40.010            5 1588.0  1.570  13.8 5.04   0.0    0.0  0.000 1588.0  1.570  0.00 198.5 198.50  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:57:41.016            6 2931.0  0.702  22.4 7.81   0.0    0.0  0.000 2931.0  0.702  0.00 366.3 366.38  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:57:42.009            7 2263.0  0.883  23.6 11.3   0.0    0.0  0.000 2263.0  0.883  0.00 282.8 282.88  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:57:43.008            8 2829.0  0.705  20.5 10.4   0.0    0.0  0.000 2829.0  0.705  0.00 353.6 353.62  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:57:44.008            9 2299.0  0.804  21.5 12.0   0.0    0.0  0.000 2299.0  0.804  0.00 287.3 287.38  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:57:44.479 localhost-0: anchor=/grp_m14 create complete.
+22:57:45.009           10 1298.0  0.781  14.4 8.50   0.0    0.0  0.000 1298.0  0.781  0.00 162.2 162.25  131072   0.0  0.000   0.0  0.000   2.0 9002.8   0.0  0.000   2.0  0.111   0.0  0.000
+22:57:45.016     avg_2-10 1776.3  1.120  18.2 8.05   0.0    0.0  0.000 1776.3  1.120  0.00 222.0 222.04  131072   0.0  0.000   0.0  0.000   0.2 9002.8   0.0  0.000   0.2  0.111   0.0  0.000
+22:57:45.016     std_2-10  939.7 23.866                                 939.7 23.866                                                        0.7 61.227                0.7  0.103             
+22:57:45.017     max_2-10 2931.0 1619.2                                2931.0 1619.2                                   0.842        0.305   2.0 9046.1        1.915   2.0  0.183       55.858
+22:57:45.135 
+22:57:45.135 Miscellaneous statistics:
+22:57:45.135 (These statistics do not include activity between the last reported interval and shutdown.)
+22:57:45.135 FILE_CREATES        Files created:                                    2          0/sec
+22:57:45.135 DIRECTORY_CREATES   Directories created:                              1          0/sec
+22:57:45.135 FILE_DELETES        Files deleted:                                    2          0/sec
+22:57:45.136 DIRECTORY_DELETES   Directories deleted:                              1          0/sec
+22:57:45.136 WRITE_OPENS         Files opened for write activity:                  2          0/sec
+22:57:45.136 DIR_EXISTS          Directory may not exist (yet):                    3          0/sec
+22:57:45.136 FILE_CLOSES         Close requests:                                   2          0/sec
+22:57:45.136 
+22:57:45.136 Flushing all reports
+22:57:45.137 Java Heap in MB. max:  512.000; current:   66.000; used:   32.354; free:   33.646
+22:57:45.145 slv=localhost-0 fwd=fwd1 fsd=fsd1 anchor=/grp_m14 threads= 2 skew= 0.00 operation=create 
+22:57:45.147 Waiting for synchronization of all slaves
+22:57:45.247 Synchronization of all slaves complete
+
+<a name="_1451043227"></a><i><b>22:57:46.002 Starting RD=rd1; elapsed=30; fwdrate=max. For loops: None</b></i>
+
+22:57:46.215 
+22:57:46.215 Message from slave localhost-0: 
+22:57:46.215 Anchor: /grp_m14
+22:57:46.215 Vdbench is trying to create a new file, but all files already exist, 
+22:57:46.215 and no threads are currently active deleting files
+22:57:46.215 FwgThread.canWeGetMoreFiles(): Shutting down threads for operation=create
+22:57:46.215 
+Nov 14, 2022 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ...mkdir.... ...rmdir.... ...create... ....open.... ...close.... ...delete...
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp
+22:57:47.011            1    0.0  0.000   5.2 1.37   0.0    0.0  0.000    0.0  0.000  0.00  0.00   0.00       0   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:57:47.015      avg_2-1 NaN  0.000 NaN NaN   0.0 NaN  0.000 NaN  0.000 NaN NaN NaN       0 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000
+22:57:47.015      std_2-1                                                                                                                                                                    
+22:57:47.016      max_2-1                                                                                                                                                                    
+22:57:47.120 Miscellaneous statistics: All counters are zero
+22:57:47.120 Flushing all reports
+22:57:47.121 Java Heap in MB. max:  512.000; current:   66.000; used:   22.920; free:   43.080
+22:57:47.129 Ending Reporter
+22:57:47.273 Vdbench execution completed successfully. Output directory: /home/akshat/Desktop/vd/output 
+
+22:57:48.280 Java Heap in MB. max:  512.000; current:   66.000; used:   19.961; free:   46.039
